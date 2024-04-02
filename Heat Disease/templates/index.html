@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #595959;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        background-image: url('https://images.ctfassets.net/u4vv676b8z52/19CmQFEyUL6GGY6X0uHoh3/1f89933ed1215bf0cb2288dcf825ee7e/heart-disease-678x446.gif?fm=jpg&q=80'); /* Add iris flower background */
+        background-size: cover; /* Ensure the background image covers the entire viewport */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevent the background image from repeating */
+      }
+      div.form {
+        box-shadow: 2px 2px 30px #1a1a1a;
+        width: 45vw;
+        background-color: rgba(191, 191, 191, 0.8); /* Adjust background color with opacity */
+        text-align: center; 
+        border-left-color: #a6a6a6;
+        margin: auto; /* Center the form horizontally */
+        margin-top: 100px; /* Add some top margin for better positioning */
+      }
+      form {
+        border-left-style: solid;
+        border-color: #9933ff;
+        border-left-width: 5px;
+        padding: 15px;
+      }
+      h1 {
+        color: black; /* Change color to black */
+        font-weight: bold; /* Make text bold */
+        text-align: center;
+      }
+      input[type=text] {
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        border: 0px;
+      }
+      input[type=submit] {
+        background-color: #b366ff;
+        width: 90px;
+        height: 30px;
+        border: 0px;
+      }
+      input[type=submit]:hover {
+        background-color: #a64dff;
+      }
+      span {
+        color: #ffffff;
+      }
+    </style>
+    <title>Iris Flower Predictor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1>CardioCare: Web-Based Heart Disease Prediction System</h1>
+    <div class="form">
+      <form action="/predict" method="post">
+        Enter the values to check the heart disease<br><br>
+        <input type="text" name="age" placeholder="Age" autofocus required><span>&nbsp&nbsp&nbsp 10 - 80</span><br><br>
+        <input type="text" name="sex" placeholder="Gender" required><span>&nbsp&nbsp&nbsp M - F</span><br><br>
+        <input type="text" name="chest-pain" placeholder="Chest Pain" required><span>&nbsp&nbsp&nbsp 1 - 2 - 3 - 4</span><br><br>
+        <input type="text" name="rest-bp" placeholder="Resting BP" required><span>&nbsp&nbsp&nbsp 100 - 200</span><br><br>
+        <input type="text" name="serum-cholestoral" placeholder="Serum Chol" autofocus required><span>&nbsp&nbsp&nbsp 100 - 400</span><br><br>
+        <input type="text" name="fasting-blood" placeholder="Fasting Blood" required><span>&nbsp&nbsp&nbsp </span><br><br>
+        <input type="text" name="rest-ecg" placeholder="Rest ECG" required><span>&nbsp&nbsp&nbsp 50 - 250</span><br><br>
+        <input type="text" name="max-heart-rate" placeholder="Max Heart Rate" required><span>&nbsp&nbsp&nbsp 100 - 600</span><br><br>
+        <input type="text" name="ex-induced" placeholder="EX Induced" required><span>&nbsp&nbsp&nbsp 100 - 600</span><br><br>
+        <input type="text" name="old-peak" placeholder="Old Peak" required><span>&nbsp&nbsp&nbsp 100 - 600</span><br><br>
+        <input type="text" name="slope" placeholder="Slope" required><span>&nbsp&nbsp&nbsp 100 - 600</span><br><br>
+        <input type="text" name="num-vessels" placeholder="Num Vessels" required><span>&nbsp&nbsp&nbsp 100 - 600</span><br><br>
+        <input type="text" name="thal" placeholder="Thal" required><span>&nbsp&nbsp&nbsp 100 - 600</span><br><br>
+        <input type="submit" value="Predict">
+      </form>
+    </div>
+  </body>
+</html>
