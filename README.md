@@ -10,8 +10,18 @@ From predictive modeling to image analysis, I specialize in a wide range of mach
 
 But what truly sets me apart is my commitment to excellence. I approach each project with meticulous attention to detail and a genuine eagerness to make a positive impact. My goal isn't just to deliver results; it's to deliver results that matter.
 
-If you're seeking a dedicated professional who not only understands the complexities of biomedical engineering but also possesses the technical prowess of a data scientist, then you're in the right place. Let's collaborate to turn data into actionable insights and drive progress in the realm of healthcare.
+Here is my Project List: 
 
-Are you ready to seize this extraordinary opportunity and elevate the world of machine learning with your bio-inspired brilliance? Let's embark on this exhilarating journey together, where data-driven discoveries shape the future of healthcare! 🌟
+## Web Scraping
+For web scraping, leverage a combination of powerful libraries such as BeautifulSoup, Selenium, and Scrapy to extract data from diverse websites.
 
-Looking forward to working with you on your next data-driven journey!
+## Iris Classification 
+This project is dedicated to scrutinizing the machine learning algorithms employed in the iris dataset. Its primary goal is to determine the most effective algorithm and assess its accuracy. Through a combination of exploratory data analysis and the application of various machine learning models, I aim to gain valuable insights into our dataset's characteristics and the performance of different algorithms.
+
+## Heart Disease
+In this project, I conducted exploratory data analysis (EDA) to understand the dataset better. Then, I built and tested various models to evaluate their accuracy and performance. Finally, I deployed the best-performing model into a web application.
+
+## Titanic Case Study
+This case study showcases the development of a binary model to predict the probability of survival in the loss of Titanic. I demonstrate the overall modeling process, including preprocessing, exploratory analysis, model fitting, adjustment, and interpretation as well as other relevant techniques such as imputation for missing data. 
+
+Your feedback and insights are highly appreciated as we embark on this journey of optimizing our machine-learning models.
