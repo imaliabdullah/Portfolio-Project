@@ -24,4 +24,8 @@ In this project, I conducted exploratory data analysis (EDA) to understand the d
 ## Titanic Case Study
 This case study showcases the development of a binary model to predict the probability of survival in the loss of Titanic. I demonstrate the overall modeling process, including preprocessing, exploratory analysis, model fitting, adjustment, and interpretation as well as other relevant techniques such as imputation for missing data. 
 
+## An ML Approch for analyzing Customer Churn
+Prediction of Customer Behavior and Customer Retention has always been a challenge for any business. It costs more to acquire new customers than it does to retain existing customers. This business Metric helps to understand the reason behind the churn and to take effective initiatives to deal with the churn percentage
+
+
 Your feedback and insights are highly appreciated as we embark on this journey of optimizing our machine-learning models.
