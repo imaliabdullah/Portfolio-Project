@@ -8,39 +8,110 @@
         "How are you",
         "Is anyone there?",
         "Hello",
-        "Good day"
+        "Good day",
+        "What’s up?",
+        "How’s it going?",
+        "Hey there",
+        "Yo",
+        "Greetings",
+        "Howdy",
+        "Hiya",
+        "Hello there"
       ],
       "responses": [
         "Hey :-)",
         "Hello, thanks for visiting",
         "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hi there, how can I help?",
+        "Hello! How can I assist you today?",
+        "Hi! What can I do for you?",
+        "Greetings! How can I help you?",
+        "Hello! What brings you here today?",
+        "Hi! What’s on your mind?"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Farewell",
+        "Catch you later",
+        "Have a good one",
+        "Take care",
+        "See you soon",
+        "I’m leaving",
+        "I’m off",
+        "Adios",
+        "See you around",
+        "Goodbye for now",
+        "Talk to you later"
+      ],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
-        "Bye! Come back again soon."
+        "Bye! Come back again soon.",
+        "Goodbye! Have a great day!",
+        "Farewell! See you soon!",
+        "Take care! Hope to see you again!",
+        "Catch you later! Have a good one!",
+        "Goodbye for now! Feel free to return if you need anything else."
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!",
+        "I appreciate it",
+        "Thanks a bunch",
+        "Thank you very much",
+        "Much appreciated",
+        "You're a lifesaver",
+        "Thanks for your help",
+        "Grateful for your assistance",
+        "Thanks a lot",
+        "I’m very grateful"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You're welcome!",
+        "Glad I could help!",
+        "Anytime! If you need more help, just ask.",
+        "It’s my pleasure! Feel free to ask if you need anything else.",
+        "I’m glad you found it helpful!"
+      ]
     },
     {
       "tag": "items",
       "patterns": [
         "Which items do you have?",
         "What kinds of items are there?",
-        "What do you sell?"
+        "What do you sell?",
+        "Can you tell me about your products?",
+        "What items are available?",
+        "Do you have any products?",
+        "What’s on your menu?",
+        "Tell me about your offerings",
+        "What can I buy here?",
+        "What products do you offer?",
+        "What’s in your inventory?",
+        "Do you have any special items?",
+        "Can you list your products?"
       ],
       "responses": [
         "We sell coffee and tea",
-        "We have coffee and tea"
+        "We have coffee and tea",
+        "Our menu includes coffee and tea.",
+        "We offer a variety of coffee and tea.",
+        "We have a selection of coffee and tea products.",
+        "You can choose from coffee and tea.",
+        "Our items include different types of coffee and tea."
       ]
     },
     {
@@ -49,11 +120,24 @@
         "Do you take credit cards?",
         "Do you accept Mastercard?",
         "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Are you cash only?",
+        "What payment methods do you accept?",
+        "Can I use my credit card here?",
+        "Do you accept Visa?",
+        "Can I pay with a debit card?",
+        "What forms of payment do you accept?",
+        "Are there any payment restrictions?",
+        "Do you accept cryptocurrency?",
+        "Can I pay online?"
       ],
       "responses": [
         "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "We accept most major credit cards, and Paypal",
+        "You can pay with VISA, Mastercard, or Paypal.",
+        "We take all major credit cards and Paypal.",
+        "Payment can be made using VISA, Mastercard, or Paypal.",
+        "We accept various payment methods including credit cards and Paypal.",
+        "Currently, we do not accept cryptocurrency. We accept credit cards and Paypal."
       ]
     },
     {
@@ -61,11 +145,25 @@
       "patterns": [
         "How long does delivery take?",
         "How long does shipping take?",
-        "When do I get my delivery?"
+        "When do I get my delivery?",
+        "What is the delivery time?",
+        "How soon will my order arrive?",
+        "Delivery time frame?",
+        "When will my order be delivered?",
+        "Shipping duration?",
+        "How fast is the delivery?",
+        "What is the estimated delivery time?",
+        "Can you expedite my delivery?",
+        "Do you offer same-day delivery?"
       ],
       "responses": [
         "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Shipping takes 2-4 days",
+        "Your order will arrive within 2-4 days.",
+        "Expect delivery within 2-4 days.",
+        "We typically deliver within 2-4 days.",
+        "Shipping usually takes between 2 to 4 days.",
+        "We offer expedited delivery options for faster shipping."
       ]
     },
     {
@@ -73,11 +171,69 @@
       "patterns": [
         "Tell me a joke!",
         "Tell me something funny!",
-        "Do you know a joke?"
+        "Do you know a joke?",
+        "Share a joke with me",
+        "Can you tell me a joke?",
+        "I need a laugh",
+        "Give me a joke",
+        "Make me laugh",
+        "Tell me a funny story",
+        "Got any jokes?",
+        "Tell me a pun",
+        "Do you have a funny quote?",
+        "Crack me up!"
       ],
       "responses": [
         "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "What did the buffalo say when his son left for college? Bison.",
+        "Why don’t scientists trust atoms? Because they make up everything.",
+        "Why did the scarecrow win an award? Because he was outstanding in his field.",
+        "Why don’t skeletons fight each other? They don’t have the guts.",
+        "What do you call fake spaghetti? An impasta.",
+        "Why did the math book look sad? Because it had too many problems."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What’s the weather like today?",
+        "How’s the weather?",
+        "Is it raining?",
+        "Is it sunny?",
+        "Will it snow?",
+        "What’s the forecast?",
+        "What’s the temperature?",
+        "Is it hot or cold?",
+        "Do I need an umbrella today?",
+        "What’s the weather forecast for this week?"
+      ],
+      "responses": [
+        "I can't check the weather right now. Please use a weather app for the latest update.",
+        "I’m not able to check the weather. Please refer to a weather service for current conditions.",
+        "Sorry, I don’t have access to weather updates. Please check a weather website or app.",
+        "I recommend using a weather app or website to get the latest weather information."
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "I need help",
+        "Can you assist me?",
+        "I have a problem",
+        "Can you support me?",
+        "I need support",
+        "Help me out",
+        "Can you help?",
+        "I’m having trouble",
+        "I need assistance",
+        "Please assist"
+      ],
+      "responses": [
+        "Sure, I’m here to help! What do you need assistance with?",
+        "I’m happy to assist you. What seems to be the problem?",
+        "Please let me know how I can support you.",
+        "I’m here to help. Could you describe the issue you’re facing?",
+        "How can I assist you today? Let me know your problem."
       ]
     }
   ]
