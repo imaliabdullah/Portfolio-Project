@@ -1,13 +1,14 @@
 import numpy as np
 import random
 import json
-
+from model import EncoderDecoder
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
 from nltk_utils import bag_of_words, tokenize, stem
-from model import NeuralNet
+
+# Assuming you have a separate NeuralNet with encoder-decoder structure
 
 with open(r'intents.json', 'r') as f:
     intents = json.load(f)
@@ -35,10 +36,6 @@ all_words = [stem(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
-# print(len(xy), "patterns")
-# print(len(tags), "tags:", tags)
-# print(len(all_words), "unique stemmed words:", all_words)
-
 # create training data
 X_train = []
 y_train = []
@@ -57,11 +54,12 @@ y_train = np.array(y_train)
 num_epochs = 1000
 batch_size = 8
 learning_rate = 0.001
-input_size = len(X_train[0])
+input_size = len(X_train[0])  # Input size is the bag of words length
 hidden_size = 8
 output_size = len(tags)
-print(input_size, output_size)
+seq_length = 1  # Since it's not a sequence-to-sequence task, seq_length = 1
 
+# Dataset class for chat data
 class ChatDataset(Dataset):
 
     def __init__(self):
@@ -69,11 +67,9 @@ class ChatDataset(Dataset):
         self.x_data = X_train
         self.y_data = y_train
 
-    # support indexing such that dataset[i] can be used to get i-th sample
     def __getitem__(self, index):
         return self.x_data[index], self.y_data[index]
 
-    # we can call len(dataset) to return the size
     def __len__(self):
         return self.n_samples
 
@@ -83,9 +79,11 @@ train_loader = DataLoader(dataset=dataset,
                           shuffle=True,
                           num_workers=0)
 
+# Setting up the device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-model = NeuralNet(input_size, hidden_size, output_size).to(device)
+# Initialize model
+model = EncoderDecoder(input_size, hidden_size, output_size).to(device)
 
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
@@ -99,8 +97,6 @@ for epoch in range(num_epochs):
         
         # Forward pass
         outputs = model(words)
-        # if y would be one-hot, we must apply
-        # labels = torch.max(labels, 1)[1]
         loss = criterion(outputs, labels)
         
         # Backward and optimize
@@ -109,21 +105,21 @@ for epoch in range(num_epochs):
         optimizer.step()
         
     if (epoch+1) % 100 == 0:
-        print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
-
+        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
 print(f'final loss: {loss.item():.4f}')
 
+# Save model state
 data = {
-"model_state": model.state_dict(),
-"input_size": input_size,
-"hidden_size": hidden_size,
-"output_size": output_size,
-"all_words": all_words,
-"tags": tags
+    "model_state": model.state_dict(),
+    "input_size": input_size,
+    "hidden_size": hidden_size,
+    "output_size": output_size,
+    "all_words": all_words,
+    "tags": tags
 }
 
-FILE = "data.pth"
+FILE = "data2.pth"
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')

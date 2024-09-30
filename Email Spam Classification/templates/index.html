@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Email Spam Classifier</title>
+    <title>Email/SMS Spam Classifier</title>
     <style>
         .center{
             text-align: center;
@@ -26,31 +26,26 @@
     <div>
         
         <div class="column border" style="width: 35%; padding-right: 50px;  background-color: blanchedalmond; text-align: left;">
-            <h3 style="text-align: center;">SAMPLE EMAILS</h3>
+            <h3 style="text-align: center;">SAMPLE EMAILS/SMS</h3>
             <h4 style="color: red;">SPAM</h4>
             <p>
-                My wife and I won the Mega Millions jackpot for $410 million USD on June 9, 2020 and we have voluntarily decided to donate the amount of 10M USD for charity, we are trying to reach random people from various sources and fashions to touch life from various angles, Therefore you get the message here. You have been registered as one of the lucky recipients to receive $2,000,000.00 USD <br><br>
-                To verify<br>
-                https://edition.cnn.com/2020/19/us/mega-millions-arizona-jackpot-trnd/index.html<br><br>
-                Get back to me on how to receive the donation<br>
-                Thank you<br>
-                Dennis and Maria McGee
+                <strong>Sample 1</strong> <br>
+                Congratulations ur awarded 500 of CD vouchers or 125gift guaranteed & Free entry 2 100 wkly draw txt MUSIC to 87066 TnCs www.Ldew.com1win150ppmx3age16 <br> <br>
+                <strong>Sample 2</strong> <br>
+                Free entry in 2 a weekly comp for a chance to win an ipod. Txt POD to 80182 to get entry (std txt rate) T&C's apply 08452810073 for details 18+
+                
             </p>        
             
             <h4 style="color: green;">NOT SPAM</h4>
             <p>
-                Dear SIH Participant,<br><br>
-                We hope that you are doing well!!!<br>
-                The Inter-Institutional Inclusive Innovation Center (i4C) and the team of SIH are grateful to you for participating in Smart India Hackathon, the world's largest hackathon, and giving such genius solutions. 
-                We are the team that consistently strives to bring out the most innovative educational platforms, like Smart India Hackathon, Smart School Hackathon.<br><br>
-                To reconnect with us  please share your details by filling the form:- https://forms.gle/6rrMSQCLvuMCKi8<br><br>
-                Looking forward to a positive response!!!<br><br>
-                Thanks 
-                Team i4C
+                <strong>Sample 1</strong> <br>
+                Hello. They are going to the village pub at 8 so either come here or there accordingly. Ok?<br><br>
+                <strong>Sample 2</strong> <br>
+                No other Valentines huh? The proof is on your fb page. Ugh I'm so glad I really DIDN'T watch your rupaul show you TOOL!
             </p>
         </div>
         <div class="column" style="width: 55%;">
-            <h1 class="center">Email Spam Classifier</h1>
+            <h1 class="center">Email/SMS Spam Classifier</h1>
             {% if response %}
                 {% if response == -1 %}
                     <h2 style="color:green">Not Spam</h2>
